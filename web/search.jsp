@@ -12,23 +12,29 @@
         <%@ include file="includes/header.jsp" %>
         
         <%@ include file="includes/menu.jsp" %>
-    </div>
+    
            
-        <div class="main">
+    <div class="main"> <br><br><br>
     <body>
         <h1>Search Customer Database</h1>
         <br>
         <form name="searchForm" action="search" method="get">
             
             <input type="text" name="searchVal" value=""/>
-            <br>
+            <br><br><br>
             <input type="submit" name="submit" value="Search"/>
-            
+            <br>
         </form>
-   </div>
+        <br><br>
+        </body>
+        <br>
+    </div>
+       
+    
     <div class="footer">
    <%@ include file="includes/footer.jsp" %>
 </div> <!--close the footer div -->  
-        
-    </body>
+
+    </div>
+    
 </html>
