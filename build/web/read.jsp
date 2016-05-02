@@ -7,27 +7,34 @@
         <link rel="stylesheet" href="./stylesheet.css" type="text/css"/>
       
     </head>
-        <% String table = (String) request.getAttribute("table"); %>
-        
-        <body>
         
         <div class="wrap"> <!--div to hold all other divs -->
-
+   <body>
         <%@ include file="includes/header.jsp" %>
         
         <%@ include file="includes/menu.jsp" %>
        
-           
+       
         <div class="main">
-  <h3>Customer Records</h3>
-  <br><br>
+            <br>  
+            <h3>Customer Records</h3>
+        <% String table = (String) request.getAttribute("table"); %>
 
+
+  <br><br>
+<div style="overflow-x:auto;">
         <%= table %>
+</div>
+        <br>
+        <br>
+        
+        
             </div>
-        <br><br><br>
+        <br>
 
 
 <%@ include file="includes/footer.jsp" %>
-</div> <!--close the wrap div -->  
+  
     </body>
+        </div>
 </html>
