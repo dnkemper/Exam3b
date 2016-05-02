@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/customersApp" antiJARLocking="true">
+	<Realm className="org.apache.catalina.realm.JDBCRealm"   
+	driverName="oracle.jdbc.driver.OracleDriver"   
+	connectionURL="jdbc:oracle:thin:@biz-delphi.cloudapp.net:1521:Delphi"   
+	connectionName="msci3300s1606" 
+	connectionPassword="msci3300s1606"   
+	userTable="Users" userNameCol="userName" userCredCol="userPass" userRoleTable="UserRoles" 
+	roleNameCol="roleName" />
+        
+</Context>

@@ -127,41 +127,37 @@ tr:nth-child(even) td
     color:#FF82AB;
 }
 table {
-    overflow-x: auto;
     font-family: serif;
     width:90%;
     height: 70px;
-    border-spacing:5rem;
     padding-left:5%;
     padding-right:5%;
     margin-left:2%;
     margin-right:2%;
     color:white;
     font-weight:bold;
-    table-layout: auto;
+    table-layout:auto;
     border-collapse: collapse;
     text-align: center;
 }
 
 th{
 	height: 50px;
-	width:10%;
+	width:15%;
 	text-align: center;
-	padding:1px;
-	padding-left:10px;
-        padding-right:10px;
+	padding: 3px;
         background-color: #A6D8DE;
         color: #FFFFFF;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 18px;
 }   
 td{
 	height:50px;
-	width:50px;
+	width:90%;
+        font-size: 13px;
 	text-align: center;
 	padding-left:100px;
         padding: 1px;
-        font-size:13px;
         background-color: #CC99CC;
         color: #FFFFFF;
 }
@@ -169,12 +165,11 @@ td{
 a{
     color:#FFFFFF;
     background-color: #FF82AB;
-    font-size: 16px;
     
 }
 a:hover, a:hover.index {
 	color:#A6D8DE;
-	background-color:#CC99CC;
+	background-color:#FFFF99;
 	text-decoration:underline;
 }
 
@@ -225,7 +220,7 @@ a:hover, a:hover.add {
     font-weight: bold;
     font-size: 15px;
 }
-.searchDatabase label{
+label{
    color:#FF82AB;
    font-weight: bold;
    display: block;
@@ -237,7 +232,7 @@ a:hover, a:hover.add {
           
 }
 fieldset {
-	border: 4px solid #FF82AB; 
+	border: 4px solid #FF82AB;
 	width: 100%;
 	background: #FFFF99;
 	padding: 3px;
@@ -260,7 +255,7 @@ fieldset legend {
         border: 4px solid #FF82AB;
 }
 
-.searchDatabase input[type=text] {
+input[type=text] {
     background-color: #DDDaD6;
     color: white;
     width: 20%;
@@ -273,13 +268,25 @@ fieldset legend {
     border-radius: 2px;
     resize: auto;
 }
-
-.searchDatabase input[readonly] {
+input[type=password] {
+    background-color: #DDDaD6;
+    color: white;
+    width: 20%;
+    height: 20px;
+    font-size: 17px;
+    padding: 12px;
+    margin-left: 80%;
+    box-sizing: border-box;
+    border: 2px solid #FFFF99;
+    border-radius: 2px;
+    resize: auto;
+}
+input[readonly] {
     background-color: #4D025D;
     color: #CCCCCC;
 }
 
-.searchDatabase input[type=submit], input[type=submit], input[type=reset] {
+input[type=button], input[type=submit], input[type=reset] {
     margin-left:83%;
     background-color: #FF82AB;
     border: #FFFF99;
@@ -294,133 +301,12 @@ fieldset legend {
     cursor: pointer;
     width: 14%;}
 
-.searchDatabase input:hover[type=submit], input:hover[type=submit], input:hover[type=reset]{
+input:hover[type=button], input:hover[type=submit], input:hover[type=reset]{
    background-color: #FFFF99;
     color: #F08080; 
 }
 
-.addForm label {
-   color:#FFFFFF;
-   font-weight: bold;
-   display: block;
-   width: 100px;
-   margin-left: 5%;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-left: 27%;
-   padding-right:24%;
-   font-size: 16px;
-          
-}
-
-.addForm input[type=text] {
-    background-color: #DDDaD6;
-    font-weight: bold;
-    color: white;
-    width: 40%;
-    height: 35px;
-    font-size: 16px;
-    padding: 20px 20px;
-    margin-left: 34%;
-    box-sizing: border-box;
-    border: 2px solid #FFFF99;
-    border-radius: 4px;
-    resize: auto;
-}
-.addForm input[type=button], input[type=submit], input[type=reset] {
-    background-color: #FF82AB;
-    border: #2F4F4F;
-    border-color: #2F4F4F;
-    border-radius:4px;
-    font-weight: bold;
-    font-size: 90%;
-    color: white;
-    padding: 20px 20px;
-    text-decoration: none;
-    margin: 4px 4px;
-    cursor: pointer;
-    width:100%;}
-
-.addForm input:hover[type=button], input:hover[type=submit], input:hover[type=reset]{
-   background-color: #CC99CC;
-    color: #edf8f7; 
-}
-
-input[type=password] {
-    background-color: #DDDaD6;
-    font-weight: bold;
-    color: white;
-    width: 40%;
-    height: 35px;
-    font-size: 16px;
-    padding: 20px 20px;
-    margin-left: 34%;
-    box-sizing: border-box;
-    border: 2px solid #FFFF99;
-    border-radius: 4px;
-    resize: auto;
-}
-input[type=text] {
-    background-color: #DDDaD6;
-    font-weight: bold;
-    color: white;
-    width: 40%;
-    height: 35px;
-    font-size: 16px;
-    padding: 20px 20px;
-    margin-left: 34%;
-    box-sizing: border-box;
-    border: 2px solid #FFFF99;
-    border-radius: 4px;
-    resize: auto;
-}
 
 .indexBody {
 font-size: large;
-}
-.updateForm label {
-   color:#FFFFFF;
-   font-weight: bold;
-   display: block;
-   width: 100px;
-   margin-left: 5%;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-left: 27%;
-   padding-right:24%;
-   font-size: 16px;
-          
-}
-
-.updateForm input[type=text] {
-    background-color: #DDDaD6;
-    font-weight: bold;
-    color: white;
-    width: 40%;
-    height: 35px;
-    font-size: 16px;
-    padding: 20px 20px;
-    margin-left: 34%;
-    box-sizing: border-box;
-    border: 2px solid #FFFF99;
-    border-radius: 4px;
-    resize: auto;
-}
-.updateForm input[type=button], input[type=submit], input[type=reset] {
-    background-color: #FF82AB;
-    border: #2F4F4F;
-    border-color: #2F4F4F;
-    border-radius:4px;
-    font-weight: bold;
-    font-size: 100%;
-    color: white;
-    padding: 20px 20px;
-    text-decoration: none;
- 
-    cursor: pointer;
-    width:100%;}
-
-.updateForm input:hover[type=button], input:hover[type=submit], input:hover[type=reset]{
-   background-color: #CC99CC;
-    color: #edf8f7; 
 }
